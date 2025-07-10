@@ -1,5 +1,8 @@
 
-
+*{
+    margin-top: 0;
+    padding-top: 0;
+}
 .open-sans-normal {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
@@ -8,9 +11,11 @@
     "wdth" 100;
 }
 .bg-image{
-    background-image: url(Images/header_bg.png);
+    background-image: url(Images/header_bg.png),url(Images/developer.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:50%,60px;
+    /* background-position: center ,left center; */
+    background-position: bottom right ,top left;
 }
 
 nav{
@@ -45,7 +50,7 @@ nav ul li a{
     background-color: #FD6E0A;
    font-weight: bold;
    font-size: 18px;
-   color: white;
+   color:#ffffff;
    padding: 8px 15px;
    border-radius: 5px;
    border: none;
@@ -61,6 +66,7 @@ nav ul li a{
 .contact-btn{
     background-color:transparent;
     border: 1.5px solid #FD6E0A;
+    color: #FD6E0A;
 }
 .mary-image img{
     width:100%;
@@ -68,8 +74,10 @@ nav ul li a{
     max-width: 450px;
     margin-bottom:auto;
     
+    
+    
 }
-.hero{
+.about-me{
     max-width: 800px;
     height: 300px;
     border: 0.2px solid black;
@@ -104,4 +112,143 @@ nav ul li a{
 }
 .my-info p span{
     font-weight: bold;
+}
+
+
+
+.skill{
+    text-align: center;
+    max-width: 800px;
+    
+    margin: 22px auto;
+
+}
+.skill-grid{
+    display: flex;
+    grid-template-columns: auto;
+    justify-content: center;
+    gap: 22px;
+
+}
+
+.skill-grid .card{
+    max-width: 180px;
+    height: 380px;
+    border: 1px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.skill-grid .card img{
+    float: left;
+    padding: 8px;
+}
+.skill-grid .card h4{
+    float: left;
+    padding: 8px;
+
+}
+.skill-grid .card p{
+    padding: 6px 8px;
+    text-align: left;
+    /* padding:8px; */
+   
+}
+
+.summary .title{
+    text-align: center;
+    padding-top: 30px;
+    font-size: larger;
+}
+.my-resume{
+    display: flex;
+    grid-template-columns: auto;
+    max-width: 780px;
+    justify-content: center;
+    margin: 10px auto;
+    gap: 20px;
+}
+
+.baton{
+    display: flex;
+    justify-content: center;
+    /* margin: 4px auto; */
+
+}
+.baton .bottom-btn{
+    border: 1px solid rgb(233, 162, 121);
+    border-radius: 5px;
+    margin-top: 40px;
+}
+.baton .bottom-btn a{
+    text-decoration: none;
+    color: white;
+
+}
+footer{
+    background-color: #FFF8F3;
+}
+.footer-sec{
+    
+    display: flex;
+    max-width: 800px;
+    height: 500px;
+    justify-content: center;
+    margin: 40px auto;
+    position: relative;
+}
+.footer-sec .s-media{
+    float: left;
+    /* width: 300px; */
+    margin:80px 0px;
+    position: absolute;
+    left: 0;
+
+}
+.footer-sec .s-media h4{
+    font-size: 22px;
+}
+.footer-sec .s-media p{
+    width: 300px;
+}
+.footer-sec .form{
+    margin: 80px 0px;
+    margin-right: 22px;
+    float: right;
+    width: 260px;
+    height: 300px;
+    padding: 15px;
+    border: 1px solid black;
+    position: absolute;
+    right: 0;
+    border-radius: 5px;
+    text-align: center;
+
+
+
+}
+.footer-sec .form h4{
+    font-weight: bolder;
+    font-size:22px;
+}
+.footer-sec .form input{
+    width: 200px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+.footer-sec .form textarea{
+    width:200px;
+    height: 80px;
+
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    
+}
+.footer-sec .form .sub-btn{
+    width: 90px;
+    padding:6px 10px;
+    margin-top: 10px;
+
 }
